@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  .text-primary-600 {
+    color: #10b981 !important;
+  }
+  
+  .text-primary-700 {
+    color: #059669 !important;
+  }
+  
+  .bg-primary-600 {
+    background-color: #10b981 !important;
+  }
+  
+  .bg-primary-700 {
+    background-color: #059669 !important;
+  }
+  
+  .border-primary-600 {
+    border-color: #10b981 !important;
+  }
+  
+  .hover\:text-primary-600:hover {
+    color: #10b981 !important;
+  }
+  
+  .hover\:text-primary-700:hover {
+    color: #059669 !important;
+  }
+  
+  .hover\:bg-primary-600:hover {
+    background-color: #10b981 !important;
+  }
+  
+  .hover\:bg-primary-700:hover {
+    background-color: #059669 !important;
+  }
+  
+  .hover\:bg-primary-50:hover {
+    background-color: rgba(16, 185, 129, 0.1) !important;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .profile-picture {
+    @apply fixed top-4 right-4 z-40;
+  }
+  
+  .profile-picture img {
+    @apply w-32 h-32 rounded-full border-4 border-white/20 shadow-2xl object-cover transition-transform duration-300 hover:scale-110 backdrop-blur-sm bg-gradient-to-br from-white/10 to-white/5;
+  }
+}
