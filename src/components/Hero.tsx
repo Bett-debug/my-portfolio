@@ -20,7 +20,7 @@ const Hero = () => {
           >
             <div className="w-32 h-32 mx-auto rounded-full border-4 border-white/20 shadow-2xl overflow-hidden backdrop-blur-sm bg-gradient-to-br from-white/10 to-white/5">
               <img 
-                src="DSC02685.jpg" 
+                src="./src/components/DSC02685.jpg" 
                 alt="Profile Picture" 
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
               />
